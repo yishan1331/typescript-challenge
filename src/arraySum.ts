@@ -23,4 +23,5 @@ export function arraySum(numbers: number[]): number {
         })
     }
     return answer;
+
 }

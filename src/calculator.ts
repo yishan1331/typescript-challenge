@@ -5,6 +5,10 @@
  */
 export function add(a: number, b: number): number {
     // 在此實現函式
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a+b;
+    }
+    return 0;
 }
 
 /**
@@ -14,6 +18,10 @@ export function add(a: number, b: number): number {
  */
 export function subtract(a: number, b: number): number {
     // 在此實現函式
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a-b;
+    }
+    return 0;
 }
 
 /**
@@ -23,6 +31,10 @@ export function subtract(a: number, b: number): number {
  */
 export function multiply(a: number, b: number): number {
     // 在此實現函式
+    if (typeof a === 'number' && typeof b === 'number') {
+        return a*b;
+    }
+    return 0;
 }
 
 /**
@@ -32,6 +44,11 @@ export function multiply(a: number, b: number): number {
  */
 export function divide(a: number, b: number): number {
     // 在此實現函式
+    if (typeof a === 'number' && typeof b === 'number') {
+        if (b === 0) throw new RangeError('Cannot divide by zero');
+        return a/b;
+    }
+    return 0;
 }
 
 /**
@@ -44,4 +61,4 @@ export function divide(a: number, b: number): number {
 export function add100(a: number, b: number): number {
     const sum = a + b;
     return sum > 100 ? 100 : sum;
-  }
+}

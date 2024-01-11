@@ -14,4 +14,14 @@
  */
 export function arraySum(numbers: number[]): number {
     // 在此實現函式
+    let answer = 0;
+    if (Array.isArray(numbers)) {
+        numbers.map(item => {
+            if (typeof item === 'number') {
+                answer += item;
+            }
+        })
+    }
+    return answer;
+
 }
